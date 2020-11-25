@@ -1,11 +1,10 @@
 # Project exclude paths
 ### Maven
-target/
-
+/target/
+/.idea/*
 ### IntelliJ IDEA ###
 .idea
 *.iws
 *.iml
 *.ipr
-
 *.xml
