@@ -11,7 +11,7 @@ public class Main {
     private static final String SENTENCE = "hoho hoho ho ";
     private static List<List<Integer>> ans;
 
-    public static void main(String[] args) throws Exception {
+    //public static void main(String[] args) throws Exception {
 //        System.out.println("start benchmark...");
 //        Stream<Character> stream = IntStream.range(0, SENTENCE.length()).mapToObj(SENTENCE::charAt);
         // stream.parallel()로 실행하면 올바르게 나오지 않는다. 왜냐하면 공백을 기준으로 자르는 것이 아니라 단어로 자를 수 있기 때문에 그러하다.
@@ -55,13 +55,13 @@ public class Main {
 //        }
 //        long retrievalTime = ((System.nanoTime() - start) / 1_000_000);
 //        System.out.println("retrieval time : " + retrievalTime + Thread.currentThread().getName());
-        List<Integer> arg = Arrays.asList(1, 2, 3);
-        List<List<Integer>> ret = subsets(arg);
-        for (List<Integer> list : ret) {
-            list.forEach(a -> System.out.print(a + " "));
-            System.out.println();
-        }
-    }
+//        List<Integer> arg = Arrays.asList(1, 2, 3);
+//        List<List<Integer>> ret = subsets(arg);
+//        for (List<Integer> list : ret) {
+//            list.forEach(a -> System.out.print(a + " "));
+//            System.out.println();
+//        }
+//    }
 
     private static List<List<Integer>> subsets(List<Integer> list) {
         if (list.isEmpty()) {
